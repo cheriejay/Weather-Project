@@ -15,10 +15,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="weathermain col-6 offset-2">
+      <div class="weathermain col-6 offset-2 custom justify-content-center">
         <form id="search-form">
           <div class="row">
-            <div class="col-8">
+            <div class="col-7">
               <input
                 class="form-control input"
                 type="text"
@@ -27,12 +27,43 @@
                 id="search-in"
               />
             </div>
-            <div class="col-4">
+            <div class="col-5">
               <button id="s-button" class="btn btn-primary">Search</button>
               <button id="c-button" class="btn btn-success">Current</button>
             </div>
           </div>
         </form>
+        <div class="row">
+          <h1>Nigeria</h1>
+          <ul>
+            <li id="date">Friday, Feb 14 12:03</li>
+            <li id="desc">cloudy day</li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+              alt="weather icon"
+              id="icon"
+            />
+            <span class="h2" id="temp">24 </span>
+            <span class="units">°C</span>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Pressure: <span id="pressure">1100</span> mb</li>
+              <li>Humidity: <span id="humidity">40</span>%</li>
+              <li>WindSpeed: <span id="wind">3</span> km/h</li>
+            </ul>
+          </div>
+        </div>
+        <strong
+          ><a href="https://github.com/cheriejay/Search-engine" target="_blank"
+            >Open-source code
+          </a>
+          by Cherie Jachinma</strong
+        >
       </div>
     </div>
     <script src="src/app.js"></script>

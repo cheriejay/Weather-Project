@@ -1,3 +1,23 @@
+body {
+  font-family: sans-serif;
+  color: gray;
+  background: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
 .weathermain {
-  border: 1px solid #000;
+  border: 1px solid lightslategray;
+  background: whitesmoke;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+.row {
+  margin: 10px;
+}
+ul {
+  list-style-type: none;
 }
