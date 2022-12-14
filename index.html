@@ -13,5 +13,28 @@
       crossorigin="anonymous"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="weathermain col-6 offset-2">
+        <form id="search-form">
+          <div class="row">
+            <div class="col-8">
+              <input
+                class="form-control input"
+                type="text"
+                placeholder="Enter a City"
+                aria-label="default input example"
+                id="search-in"
+              />
+            </div>
+            <div class="col-4">
+              <button id="s-button" class="btn btn-primary">Search</button>
+              <button id="c-button" class="btn btn-success">Current</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 </html>
