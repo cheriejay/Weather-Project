@@ -1,18 +1,21 @@
 body {
-  font-family: sans-serif;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   color: gray;
   background: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto;
 }
-
+.wrapper {
+  margin: 30px auto;
+  max-width: none;
+}
 .weathermain {
   border: 1px solid lightslategray;
   background: whitesmoke;
   border-radius: 10px;
-  max-width: 600px;
-  margin: 30px auto;
   padding: 20px;
 }
 .row {
