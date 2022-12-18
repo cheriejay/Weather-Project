@@ -35,6 +35,31 @@ if (minute < 10) {
   minute = `0${minute}`;
 }
 currentDate.innerHTML = `${day}, ${date} ${month}. ${hour}:${minute}`;
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#we-forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+              <div class="col-2">
+                <div class="forecast-day">${day}</div>
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="clouds"
+                  width="40"
+                />
+                <div class="forecast-temp">
+                  <span class="max-temp">18° </span
+                  ><span class="min-temp"> 12°</span>
+                </div>
+            </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 //next
 function search(city) {
   let apiKey = "515c9ddbeb3cda9061acfab71031839e";
@@ -108,3 +133,4 @@ let celLink = document.querySelector("#cel");
 celLink.addEventListener("click", displayCelTemp);
 
 search("Lagos");
+displayForecast();
