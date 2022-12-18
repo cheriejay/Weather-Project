@@ -3,7 +3,11 @@ body {
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   color: gray;
-  background: white;
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto;
@@ -14,7 +18,12 @@ body {
 }
 .weathermain {
   border: 1px solid lightslategray;
-  background: whitesmoke;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(215, 223, 252) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 223, 252) 84%
+  );
   border-radius: 10px;
   padding: 20px;
 }
@@ -35,8 +44,16 @@ ul {
 }
 .units {
   position: relative;
-  bottom: 23px;
+  bottom: 25px;
   font-size: 16px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  color: black;
 }
 .forecast {
   text-align: center;
