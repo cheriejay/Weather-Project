@@ -88,4 +88,23 @@ sbutton.addEventListener("click", currentLocation);
 
 let celTemp = null;
 
+function displayFarTemp(event) {
+  event.preventDefault();
+  let farTemp = (celTemp * 9) / 5 + 32;
+  let tempElement = document.querySelector("#temp");
+  tempElement.innerHTML = Math.round(farTemp);
+}
+
+let farLink = document.querySelector("#far");
+farLink.addEventListener("click", displayFarTemp);
+
+function displayCelTemp(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#temp");
+  tempElement.innerHTML = Math.round(celTemp);
+}
+
+let celLink = document.querySelector("#cel");
+celLink.addEventListener("click", displayCelTemp);
+
 search("Lagos");
